@@ -10,8 +10,13 @@ Next follow the instructions from this link exactly to reset your password [ [TU
 ## Part 2 - Visual Studio Code
 *If you already have Visual Studio Code installed you can skip this step.*
 <br /> Proceed the Visual Studio Code website [Visual Studio Code]( https://code.visualstudio.com/) and follow the instructions to download it. 
-<br /> Once you have downloaded it, opening Visual Studio Code should look like this: 
+<br /> Once you have downloaded it, opening Visual Studio Code should look like this (if you have windows): 
 <br /> ![Image](VS_Code_(Insiders).png)
+<br /> Or like this if you IOS  
+<br /> ![Image](VS_Code_(Insiders).png)
+<br/> Or if you have a different OS then it should look similar to these but not exact. 
+
+
 
 ## Part 3 – Remotely Connecting
 In this part we will be connecting to a remote server, to do this we need to first download Git 
