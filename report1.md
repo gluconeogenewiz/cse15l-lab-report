@@ -12,9 +12,9 @@ Next follow the instructions from this link exactly to reset your password [ [TU
 <br /> Proceed the Visual Studio Code website [Visual Studio Code]( https://code.visualstudio.com/) and follow the instructions to download it. 
 <br /> Once you have downloaded it, opening Visual Studio Code should look like this (if you have windows): 
 <br /> ![Image](VS_Code_(Insiders).png)
-<br /> Or like this if you IOS  
-<br /> ![Image](VS_Code_(Insiders).png)
-<br/> Or if you have a different OS then it should look similar to these but not exact. 
+<br /> Or like this if you are on IOS: 
+<br /> ![Image](maxresdefault.jpg)
+<br/>  Or if you have a different OS then it should look similar to these but not exact, so don't worry if it looks different. 
 
 
 
@@ -77,9 +77,14 @@ Now try runnning some commands in the terminal.
 * cd
 * ls -lat 
 * ls -a 
-* ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, where the abc is one of the other group members’ username
-* cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
-* cat /home/linux/ieng6/cs15lsp23/public/hello.txt
+ 
+     *cd stands for "change directory" and is used to navigate to a different directory in the file system. When you type cd followed by a directory path, the command changes your current working directory to the specified path.
+
+    *ls -lat is a command used to list the contents of a directory. The -l option causes ls to display the contents of the directory in a detailed, long format that includes file permissions, ownership, size, and modification time. The -a option displays all files, including hidden files that are typically not displayed by default. The -t option sorts the files by modification time, with the most recently modified files appearing first.
+
+    *ls -a is similar to the previous command, but it only displays the contents of the directory in a simple format, with one file or directory per line. The -a option causes ls to display all files, including hidden files that are typically not displayed by default.
+ 
+ 
  
 <br /> Here is an example of what running the ls - lat returns: 
 
@@ -110,14 +115,18 @@ drwxr-sr-x 174 root     ieng6_staff 16384 Apr  4 12:35 ..
 
 
 ```
-
-Here is an examples of what is returned when running ls -a:
+The output of ls-lat is showing the contents of the current directory in a long format, sorted by modification time with the most recently modified files appearing first.
+ 
+ 
+<br /> Here is an examples of what is returned when running ls -a:
   
 ```
 [aqnguyen@ieng6-201]:~:14$ ls -a
 .   .bash_history  .bashrc  .config  .kshrc  .locallogin  .modulesbegenv  .procmailrc  .zprofile  .zshrc     perl5
 ..  .bash_profile  .cache   .cshrc   .local  .login       .motd           .profile     .zshenv    hello.txt         
 ```
+ 
+<br /> The output of the ls command will list the contents of the current directory in a simple format, with one file or directory per line.
 
 ## Part 5 - Logging out 
 To log out of the remote server in your terminal, use: 
