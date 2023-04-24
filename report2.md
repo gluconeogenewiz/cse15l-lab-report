@@ -85,7 +85,7 @@ end of the array, we correctly reverse the order of the array.
 The use of a temporary variable ensures that we don't overwrite any values before we've had a chance to copy them to their new location.
 
 
-## Part 3- What I leaned
+## Part 3- What I learned
 <br /> One key learning outcome from identifying and fixing bugs in code is the importance of thorough testing.
 In this exercise, we demonstrated how adding additional tests can reveal bugs in code that were not caught by the original tests. By identifying and understanding the bugs, we also gained a deeper understanding of how the code works and how to write correct implementations.
 This process can help developers become more confident in their code and can ultimately lead to more reliable and maintainable software.
