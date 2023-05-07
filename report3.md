@@ -10,7 +10,7 @@ It then prints out those lines, allowing you to quickly identify and extract the
 
 ### Options
 
- `grep -i`
+#### `grep -i`
 <br /> Description: the option ` -i` makes the search case-insenstive, allowing for matches even 
 if the cases of the letters differ. 
 <br /> Example 1: Searching for the word "terrorism" with `grep -i`:
@@ -46,7 +46,7 @@ attack on September 11, 2001.
 <br /> Explanation: The `-i` option allows grep to match words regardless of case, 
 so it returns matches for both "semptember" and "September."
 
-<br /> `grep -v`
+#### `grep -v`
 <br />Description: the opition `- v` inverts the matches, in other words, it displays teh lines that 
 do not match the give chracters/patters. 
 
@@ -85,7 +85,7 @@ Understanding why terrorists target the
 ```
 <br />  Explanation: The `-v` option allows grep to match words that do not contian the words "attack" case inclusive. 
 
-<br /> `grep -n`
+#### `grep -n`
 <br /> Description: : This option displays line numbers along with the matched lines. 
 <br /> Example 1: Searching for the word "terror" with line numbers:
 <br /> Input: 
@@ -121,7 +121,8 @@ Example 2: Searching for the word "crisis" with line numbers:
 ```
 Explanation: The -n option causes grep to display line numbers for each matched line.
 
-<br />`grep -r` 
+
+#### `grep -r` 
 <br /> Description: This option allows grep to search files recursively in directories.
 <br /> Example 1: Searching for the word "intelligence" recursively in the current dictionary. 
 <br /> Input:
