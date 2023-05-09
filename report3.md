@@ -13,158 +13,172 @@ It then prints out those lines, allowing you to quickly identify and extract the
 #### `grep -i`
 <br /> Description: the option ` -i` makes the search case-insenstive, allowing for matches even 
 if the cases of the letters differ. 
-<br /> Example 1: Searching for the word "terrorism" with `grep -i`:
+
+
+
+<br /> Example 1: Searching for the word "Excellent" with `grep -i`:
 
 Input: 
 ```
-grep -i "terrorism" chapter-1.txt
+$ grep -i "Excellent" stringsearch-data/technical/plos/pmed.0020191.txt 
 
 ```
+
  Output: 
 ```
-'counterrorism.'
-'occurring', terrorism would have to be
-'cultural' theory of terrorism.
+The excellent article by Jordan Paradise, Lori B. Andrews, and colleagues, “Ethics
 
 ```
 <br /> Explanation: The `-i` option allows grep to match words regardless of case, 
-so it returns matches for both "terrorism" and "Terrorism."
+so it returns matches for both "Excellent" and "excellent."
 
-<br /> Example 1: Searching for the word "semptember" with `grep -i`:
+<br /> Example 2: Searching for the word "Article" with `grep -i`:
 
 Input: 
 ```
-grep -i "september" chapter-1.txt
+$ grep -i "Article" stringsearch-data/technical/plos/pmed.0020191.txt
 
 ```
-Output:  (there are more lines but this is just some of the lines) 
+Output:  
 ```
-September 11, 2001, was
-attack on September 11, 2001.
+The excellent article by Jordan Paradise, Lori B. Andrews, and colleagues, “Ethics.
 
 ```
 <br /> Explanation: The `-i` option allows grep to match words regardless of case, 
-so it returns matches for both "semptember" and "September."
+so it returns matches for both "Article" and "article."
 
 #### `grep -v`
-<br />Description: the opition `- v` inverts the matches, in other words, it displays teh lines that 
-do not match the give chracters/patters. 
+<br />Description: the opition `- v` inverts the matches, in other words, it displays the lines that 
+do not match the give chracters/patterns. 
 
-<br /> Example 1: Searching for lines that do not contian the words "terrorist" (the 's' is not included)
+<br /> Example 1: Searching for lines that do not contian the words "article" 
 <br /> Input:
 ```
-grep -v "terrorist" chapter-1.txt
+grep -v "article" stringsearch-data/technical/plos/pmed.0020191.txt
 
 ```
-Output:  (there are more lines but this is just some of the lines) 
+Output: 
 ```
-terrorists are studying
-is largely one of terrorists studying international relations
-someone who fights terrorists is not a
+  Constructing Ethical Guidelines for Biohistory” [1], neither advocates nor argues against
+        biohistorical research; instead, it points out that such investigations are currently
+        taking place without guidelines—ethical, scientific, moral, or religious. The question
+        remains: if such guidelines were to be established, what individuals, 
+institutions,
+        governments, medical examiners, family members, or intrepid biographers are to be given
+        permission? Who is to decide what is “historically significant”? Not to mention the
+        meta-question: who is to decide who is to decide? I apologize to the authors if my brief
+        comments [2] implied that they took a position on this issue.
 
 ```
-<br />  Explanation: The `-v` option allows grep to match words that do not contian the words "terrorist" case inclusive. 
-Hench terrorists was an output as it is not the same as terrorist 
+<br />  Explanation: The `-v` option allows grep to match words that do not contian the words "article" case inclusive. 
 
 
-<br /> Example 2: Searching for lines not containing the word "attack":
+<br /> Example 2: Searching for lines not containing the word  "Constructing":
 <br /> Intput:
 ```
-grep -v "attack" chapter-1.txt
+grep -v "Constructing" stringsearch-data/technical/plos/pmed.0020191.txt
 
 ```
-<br /> Output: (there are more lines but this is just some of the lines) 
+<br /> Output: 
 ```
-hijacked airplane, the terrorists
-the mindset of terrorists. These events
-terrorize by sporadic attacks, producing horror,
-the particular challenge of attacking a
-terrorists to target commercial
-Understanding why terrorists target the
+
+        The excellent article by Jordan Paradise, Lori B. Andrews, and colleagues, “Ethics.
+        biohistorical research; instead, it points out that such investigations are currently
+        taking place without guidelines—ethical, scientific, moral, or religious. The question
+        remains: if such guidelines were to be established, what individuals, 
+institutions,
+        governments, medical examiners, family members, or intrepid biographers are to be given
+        permission? Who is to decide what is “historically significant”? Not to mention the
+        meta-question: who is to decide who is to decide? I apologize to the authors if my brief
+        comments [2] implied that they took a position on this issue.
 
 ```
-<br />  Explanation: The `-v` option allows grep to match words that do not contian the words "attack" case inclusive. 
+<br />  Explanation: The `-v` option allows grep to match words that do not contian the words "Constructing" case inclusive. 
 
 #### `grep -n`
 <br /> Description: : This option displays line numbers along with the matched lines. 
-<br /> Example 1: Searching for the word "terror" with line numbers:
+<br /> Example 1: Searching for the word "Constructing" with line numbers:
 <br /> Input: 
 ```
-grep -n "terror" chapter-1.txt
+grep -n "Constructing" stringsearch-data/technical/plos/pmed.0020191.txt
+
 
 ```
-Output: (there are more lines but this is just some of the lines) 
+Output:
 
 ```
-20:U.S. response to terror
-21:Networks of terror
-24:During the 1990s, terror-
-25:It is through terror-
-26:how terrorism affects
+7: Constructing Ethical Guidelines for Biohistory” [1], neither advocates nor argues against
 
 ```
-Explanation: The -n option causes grep to display line numbers for each matched line.
+Explanation: The -n option causes grep to display line numbers for each matched line. In this 
+case it was line 7 that matched "Constructing."
 
-<br /> Example 2: Searching for the word "crisis" with line numbers:
+<br /> Example 2: Searching for the word "Lori B. Andrews" with line numbers:
 
 <br /> Input:
 ```
-Example 2: Searching for the word "crisis" with line numbers:
+grep -n "Lori B. Andrews" stringsearch-data/technical/plos/pmed.0020191.txt
 
 ``` 
-<br /> Output: (there are more lines but this is just some of the lines) 
+<br /> Output: 
 ```
-97:of a national crisis. 
-101:a time of crisis, and also
-135:forces of the crisis. The
+6: The excellent article by Jordan Paradise, Lori B. Andrews, and colleagues, “Ethics.
 
 ```
-Explanation: The -n option causes grep to display line numbers for each matched line.
+Explanation: The -n option causes grep to display line numbers for each matched line. In this 
+case it was line 6 that matched "Constructing.
 
 
 #### `grep -r` 
 <br /> Description: This option allows grep to search files recursively in directories.
-<br /> Example 1: Searching for the word "intelligence" recursively in the current dictionary. 
+<br /> Example 1: Searching for the word "Lori B. Andrews" recursively in the current dictionary. 
 <br /> Input:
 ```
-grep -r "intelligence" 
+grep -r "Lori B. Andrews" stringsearch-data/technical
 
 ```
 
 <br /> Output: 
 ```
-./chapter-1.txt:The U.S. intelligence community developed
-./chapter-
+stringsearch-data/technical/plos/pmed.0020191.txt:        The excellent article by Jordan Paradise, Lori B. Andrews, and colleagues, “Ethics.
+stringsearch-data/technical/plos/pmed.0020192.txt:        Science piece with Lori B. Andrews that Hayden references, I am troubled
 
 ```
 <br /> Explanation: The -r option (or --recursive) in grep allows it to search for a specific pattern or word recursively within directories. 
-In this example, the command grep -r "intelligence" . is executed in the current directory (.) to search for the word "intelligence" in all
+In this example, the command grep -r "Lori B. Andrews" . is executed in the current directory (.) to search for the word "Lori B. Andrews" in all
 files and subdirectories within the current directory.
 
 
-<br /> Example 2: Searching for the word "attack" recursively in the current directory:
+<br /> Example 2: Searching for the word "Ethics" recursively in the current directory:
 
 <br /> Input: 
 
 ```
-grep -r "attack" .
+grep -r "Ethics" stringsearch-data/technical
 
 ```
-Output: (there are more lines but this is just some of the lines) 
+Output: 
 ```
-./chapter-1.txt:Widespread terror attacks involving
-./chapter-1.txt:attacks were generally random
-./chapter-1.txt:others, such as attacks on
-./chapter-1.txt:pattern of catastrophic attacks
-./chapter-1.txt:which these attacks occurred.
-./chapter-1.txt:committed the first attack. 
-./chapter-1.txt:the 1993 attack was
-./chapter-1.txt:the 1998 embassy attacks in
-./chapter-1.txt:attacks from such an
+stringsearch-data/technical/biomed/1471-2431-3-4.txt:          Ethics
+stringsearch-data/technical/biomed/1471-2431-3-5.txt:          Ethics
+stringsearch-data/technical/biomed/1472-6823-2-2.txt:          Ethics
+stringsearch-data/technical/biomed/1472-684X-1-5.txt:        end-of-life care, the Institute for Ethics at the American
+stringsearch-data/technical/biomed/1472-684X-2-1.txt:            discussion: Ethics and Discharge Planning (EDP) rounds.
+stringsearch-data/technical/biomed/1472-684X-2-2.txt:        the EAPC Ethics Task Force "terminal' or 'palliative'
+stringsearch-data/technical/biomed/1475-2883-2-11.txt:          Dame Institutional Review Boards, and the Ethics
+stringsearch-data/technical/biomed/ar750.txt:          Ethics Committee of Jyväskylä Central Hospital approved
+stringsearch-data/technical/biomed/cc1477.txt:        were used. Approval from the hospital Ethics Committee was
+stringsearch-data/technical/biomed/cc1882.txt:        protocol was approved by the local Ethics Committee and the
+stringsearch-data/technical/biomed/cc2172.txt:          Ethics Committee of Istanbul University Hospital. Written
+stringsearch-data/technical/government/About_LSC/commission_report.txt:Professional Responsibility, the Canon of Ethics, and the high
+stringsearch-data/technical/government/About_LSC/Protocol_Regarding_Access.txt:Unique State Ethics Rules: LSC acknowledges that there
+stringsearch-data/technical/government/Media/Assuring_Underprivileged.txt:Committee, the American Bar Association's Ethics 2000 Commission
+stringsearch-data/technical/plos/journal.pbio.0020150.txt:        the Stanford Center for Biomedical Ethics, thinks some action is warranted now, if only tostringsearch-data/technical/plos/pmed.0020191.txt:        The excellent article by Jordan Paradise, Lori B. Andrews, and colleagues, “Ethics.
+stringsearch-data/technical/plos/pmed.0020192.txt:        by her comment on our article. Nowhere in that article, “Ethics. Constructing Ethical
 
 ```
 <br /> Explanation: The -r option (or --recursive) in grep allows it to search for a specific pattern or word recursively within directories. 
-In this example, the command grep -r "attack" . is executed in the current directory (.) to search for the word "attack" in all files and
+In this example, the command grep -r "Ethics" . is executed in the current directory (.) to search for the word "Ethics" in all files and
 subdirectories within the current directory.
 
 
