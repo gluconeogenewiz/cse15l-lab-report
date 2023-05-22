@@ -192,9 +192,34 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
  ```
  
- git push
+ git commit -m part 2 ? 
  
  ```
- 
+ [aqnguyen@ieng6-203]:lab7:293$ git commit -m Changes
+[main 74e6384] Changes
+ Committer: Albert Nguyen <aqnguyen@ieng6-203.ucsd.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 100644 ListExamples.class
+ create mode 100644 ListExamplesTests.class
+ create mode 100644 StringChecker.class
  
  ```
+
+git push 
+
+```
+
+
+```
