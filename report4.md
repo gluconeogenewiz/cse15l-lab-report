@@ -43,6 +43,7 @@ Tests run: 2,  Failures: 1
 ```
 
 ## Step 4 - Edit the code file ListExamples.java to fix the failing test 
+
  <br /> Before 
 ```
 import java.util.ArrayList;
@@ -99,9 +100,17 @@ class ListExamples {
 
 ```
 
-<br /> Changes: Moved down to line 44, placed cursor on the 1 of index1 then clicked i ,
-then clicked 2 to insert 2 in front of index making it index21, then clicking esc, then moving the cursor back on 1 and clicked x to delete it 
- 
+<br /> Changes:
+1. Move down to line 44
+2. place cursor on the 1 of index1 
+3. click `i` on the keyboard to initate insertions 
+4. click `2` on the keyboard to insert the 2 before the 1 in index1
+5. this should result in index21
+6. click `esc` to stop insertion 
+7. move cursor over the 1 in index21 
+8. click `x` to delete the 1 resulting in index2 
+
+
 <br /> After
 
 ```
@@ -169,31 +178,8 @@ OK (2 tests)
  ```
  
  ## Step 6 - Commit and push the resulting change to your Github account 
- 
- git commit -m `` <message>`` 
-  
- ```
- [aqnguyen@ieng6-203]:lab7:308$ git commit -m changes 
-On branch main
-Your branch is up to date with 'origin/main'.
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   ListExamples.java
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        ListExamples.class
-        ListExamplesTests.class
-        StringChecker.class
-
-no changes added to commit (use "git add" and/or "git commit -a")
-
- ```
- 
- git commit -m part 2 ? 
- 
+ git commit -m 
  ```
  [aqnguyen@ieng6-203]:lab7:293$ git commit -m Changes
 [main 74e6384] Changes
@@ -220,6 +206,14 @@ After doing this, you may fix the identity used for this commit with:
 git push 
 
 ```
+[aqnguyen@ieng6-203]:lab7:329$ git push 
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.93 KiB | 283.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:gluconeogenewiz/lab7.git
 
 
 ```
