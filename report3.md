@@ -7,6 +7,7 @@ It is used to search for specific text patterns within files or directories. Whe
 , and it scans the specified files or directories to find lines that match that pattern. 
 It then prints out those lines, allowing you to quickly identify and extract the relevant information you're looking for.
 
+<br /> [Reference: man7.org ] (https://man7.org/linux/man-pages/man1/grep.1.html)  
 
 ### Options
 
@@ -14,7 +15,7 @@ It then prints out those lines, allowing you to quickly identify and extract the
 <br /> Description: the option ` -i` makes the search case-insenstive, allowing for matches even 
 if the cases of the letters differ. 
 
-
+<br /> [Reference: man7.org ] (https://man7.org/linux/man-pages/man1/grep.1.html)  
 
 <br /> Example 1: Searching for the word "Excellent" with `grep -i`:
 
@@ -50,6 +51,8 @@ so it returns matches for both "Article" and "article."
 #### `grep -v`
 <br />Description: the opition `- v` inverts the matches, in other words, it displays the lines that 
 do not match the give chracters/patterns. 
+
+<br /> [Reference: man7.org ] (https://man7.org/linux/man-pages/man1/grep.1.html)  
 
 <br /> Example 1: Searching for lines that do not contian the words "article" 
 <br /> Input:
@@ -97,6 +100,9 @@ institutions,
 
 #### `grep -n`
 <br /> Description: : This option displays line numbers along with the matched lines. 
+
+<br /> [Reference: man7.org ] (https://man7.org/linux/man-pages/man1/grep.1.html)  
+
 <br /> Example 1: Searching for the word "Constructing" with line numbers:
 <br /> Input: 
 ```
@@ -131,6 +137,9 @@ case it was line 6 that matched "Constructing.
 
 #### `grep -r` 
 <br /> Description: This option allows grep to search files recursively in directories.
+
+<br /> [Reference: man7.org ] (https://man7.org/linux/man-pages/man1/grep.1.html)  
+
 <br /> Example 1: Searching for the word "Lori B. Andrews" recursively in the current dictionary. 
 <br /> Input:
 ```
