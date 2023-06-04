@@ -4,14 +4,27 @@
 
 ```
 ssh aqnguyen@ieng5.ucsd.edu 
-enter password: xxxxxxxxxxxx
-
 ```
+Keystrokes:
+`<enter>`
+```
+enter password: xxxxxxxxxxxx
+```
+
 
 ## Step 2 - Clone your fork of the repository from your Github account
 
+
+Input 
 ```
-[aqnguyen@ieng6-203]:~:284$ git clone https://github.com/gluconeogenewiz/lab7
+[aqnguyen@ieng6-202]:~:337$ git clone git@github.com:ucsd-cse15l-s23/lab7.git
+
+``` 
+Keystrokes :
+`<enter>`
+
+Output 
+```
 Cloning into 'lab7'...
 remote: Enumerating objects: 55, done.
 remote: Counting objects: 100% (20/20), done.
@@ -25,8 +38,16 @@ Resolving deltas: 100% (20/20), done.
 
 ## Step 3 - Run the tests, demonstrating that they fail 
 
+Input 
 ```
 [aqnguyen@ieng6-203]:lab7:286$ bash test.sh 
+```
+Keystrokes
+
+`<enter>`
+
+Output 
+```
 JUnit version 4.13.2
 ..E
 Time: 0.527
@@ -38,8 +59,6 @@ org.junit.runners.model.TestTimedOutException: test timed out after 500 millisec
 
 FAILURES!!!
 Tests run: 2,  Failures: 1
-
-
 ```
 
 ## Step 4 - Edit the code file ListExamples.java to fix the failing test 
@@ -100,15 +119,15 @@ class ListExamples {
 
 ```
 
-<br /> Changes:
-1. Move down to line 44
+<br /> Keystrokes:
+1. Scroll donwn to line 44 using the `<j>` on the keyboard 
 2. place cursor on the 1 of index1 
-3. click `i` on the keyboard to initate insertions 
-4. click `2` on the keyboard to insert the 2 before the 1 in index1
+3. click `<i>` on the keyboard to initate insertions 
+4. click `<2>` on the keyboard to insert the 2 before the 1 in index1
 5. this should result in index21
-6. click `esc` to stop insertion 
+6. click `<esc>` to stop insertion 
 7. move cursor over the 1 in index21 
-8. click `x` to delete the 1 resulting in index2 
+8. click `<x>` to delete the 1 resulting in index2 
 
 
 <br /> After
@@ -168,7 +187,17 @@ class ListExamples {
 ```
 
  ## Step 5 - Run the tests, demonstrating that they now succeed
+ Input 
+```
+[aqnguyen@ieng6-203]:lab7:286$ bash test.sh 
+
+```
  
+ Keystrokes:
+ 
+ `<enter>`
+ 
+ Output 
  ```
  JUnit version 4.13.2
 ..
@@ -178,10 +207,20 @@ OK (2 tests)
  ```
  
  ## Step 6 - Commit and push the resulting change to your Github account 
+ 
+Commiting 
 
- git commit -m 
+ Input
  ```
  [aqnguyen@ieng6-203]:lab7:293$ git commit -m Changes
+ 
+ ```
+ Keystrokes:
+ 
+`<enter>` 
+
+Output 
+ ```
 [main 74e6384] Changes
  Committer: Albert Nguyen <aqnguyen@ieng6-203.ucsd.edu>
 Your name and email address were configured automatically based
@@ -203,10 +242,20 @@ After doing this, you may fix the identity used for this commit with:
  
  ```
 
-git push 
+Pushing 
+
+<br /> Input
 
 ```
 [aqnguyen@ieng6-203]:lab7:329$ git push 
+
+```
+Keystrokes:
+`<enter>`
+
+
+Output 
+```
 Enumerating objects: 9, done.
 Counting objects: 100% (9/9), done.
 Delta compression using up to 8 threads
@@ -214,6 +263,5 @@ Compressing objects: 100% (6/6), done.
 Writing objects: 100% (7/7), 1.93 KiB | 283.00 KiB/s, done.
 Total 7 (delta 1), reused 0 (delta 0), pack-reused 0 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:gluconeogenewiz/lab7.git
-
 
 ```
