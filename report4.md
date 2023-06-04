@@ -1,6 +1,6 @@
 # Lab Report 4 -Editing from the Command Line: vim
 
-## Step 1 -  Logging into ieng6 
+## Step 4 -  Logging into ieng6 
 
 ```
 ssh aqnguyen@ieng5.ucsd.edu 
@@ -12,7 +12,7 @@ enter password: xxxxxxxxxxxx
 ```
 
 
-## Step 2 - Clone your fork of the repository from your Github account
+## Step 5 - Clone your fork of the repository from your Github account
 
 
 Input 
@@ -36,7 +36,7 @@ Resolving deltas: 100% (20/20), done.
 
 ```
 
-## Step 3 - Run the tests, demonstrating that they fail 
+## Step 6 - Run the tests, demonstrating that they fail 
 
 Input 
 ```
@@ -61,7 +61,7 @@ FAILURES!!!
 Tests run: 2,  Failures: 1
 ```
 
-## Step 4 - Edit the code file ListExamples.java to fix the failing test 
+## Step 7 - Edit the code file ListExamples.java to fix the failing test 
 
  <br /> Before 
 ```
@@ -186,7 +186,7 @@ class ListExamples {
 
 ```
 
- ## Step 5 - Run the tests, demonstrating that they now succeed
+ ## Step 8 - Run the tests, demonstrating that they now succeed
  Input 
 ```
 [aqnguyen@ieng6-203]:lab7:286$ bash test.sh 
@@ -206,7 +206,7 @@ Time: 0.016
 OK (2 tests)
  ```
  
- ## Step 6 - Commit and push the resulting change to your Github account 
+ ## Step 9 - Commit and push the resulting change to your Github account 
  
 Commiting 
 
