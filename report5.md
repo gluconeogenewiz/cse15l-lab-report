@@ -28,6 +28,13 @@ public class Bug {
 
 ```
 
+bash run.sh
+
+```
+
+<br /> Base run.sh excuting this command:
+
+```
 javac Bug.java
 java Bug
 
@@ -156,3 +163,9 @@ Decription:
 ```
 After making this change, the bug will be fixed, and the program will correctly calculate the sum of the numbers without throwing an ArrayIndexOutOfBoundsException.
 ```
+
+## Reflection 
+
+From lab,  I learned about the grep command and its usage in Linux systems. grep is used to search for specific text patterns within files or directories by providing it with a pattern to search for. The -i option enables case-insensitive searching, allowing matches regardless of letter case. The -v option inverts matches and displays lines that do not contain the specified pattern. The -n option displays line numbers along with the matched lines. The -r option enables recursive searching in directories and subdirectories. Overall, grep is a powerful command-line tool for efficient text pattern searching. I think I was able to really understand these commands because I was forced to write a whole lab report on it. 
+
+
